@@ -1,0 +1,22 @@
+html,
+body {
+    font-family: "Sen", sans-serif;
+}
+
+$primary-color: whitesmoke;
+$secondary-color: #333;
+$back-color: #eb5757;
+
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin back-image {
+    color: $primary-color;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 530px;
+}
