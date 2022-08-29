@@ -1,0 +1,41 @@
+#hero {
+    position: relative;
+    z-index: 999;
+    background: linear-gradient(360deg, #222, rgba(34, 34, 34, 0)), url(../../../assets/about/hero.jpg);
+    @include back-image;
+    display: flex;
+    align-content: center;
+    .container {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .title {
+        margin: 20px 0px 10px 0px;
+        font-size: 62px;
+        line-height: 1.2;
+        color: $primary-color;
+    }
+
+    h4 {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 25px;
+    }
+
+    button {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.5;
+        color: $primary-color;
+        padding: 5px 25px;
+        border: 1px solid $primary-color;
+        transition: all ease 0.2s;
+
+        &:hover {
+            background-color: $primary-color;
+            color: $secondary-color;
+        }
+    }
+}

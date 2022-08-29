@@ -1,0 +1,39 @@
+#slider {
+    .container-fluid {
+        background: linear-gradient(360deg, #222, rgba(34, 34, 34, 0)), url(../../../assets/sliderImg.jpg);
+        @include back-image;
+    }
+
+    .content-slider {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-bottom: 50px;
+        max-width: 400px;
+
+        h1 {
+            font-size: 62px;
+            padding-bottom: 10px;
+        }
+        h4 {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 1.5;
+            margin-bottom: 25px;
+        }
+        .button {
+            font-size: 16px;
+            font-weight: 500;
+            color: $primary-color;
+            border: 1px solid $primary-color;
+            padding: 5px 25px;
+            transition: all ease 0.3s;
+
+            &:hover {
+                background-color: $primary-color;
+                color: $secondary-color;
+            }
+        }
+    }
+}

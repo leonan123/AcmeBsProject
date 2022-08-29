@@ -1,0 +1,37 @@
+#footer{
+    #row-content{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .redes-sociais{
+        .rede-link{
+            margin-right: 15px;
+            width: 30px;
+            height: 30px;
+            transition: all ease .3s;
+
+            &:last-child{
+                margin-right: 0px;
+            }
+            &:hover{
+                filter: brightness(50%);
+            }
+        } 
+    }
+
+    #copyright{
+        div{
+            color: $primary-color;
+            font-size: 12px;
+            line-height:1.5;
+            font-weight: 400;
+            margin-bottom: 10px;
+
+            span{
+                color: $back-color;
+                text-decoration: underline;
+            }
+        }
+    }
+}
